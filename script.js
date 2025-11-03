@@ -10,6 +10,7 @@ let millisecond = 0
 function start() {
     pause()
     cron = setInterval(function () {
+        
         if ((millisecond += 10) == 1000) {
             millisecond = 0;
             second++;
@@ -31,6 +32,7 @@ function start() {
 
 function pause() {
     clearInterval(cron)
+    cron = null
 }
 
 function reset() {
