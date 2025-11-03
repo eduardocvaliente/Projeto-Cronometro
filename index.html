@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Cronômetro</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="borda">
+        <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">00</span>
+        </div>
+        <div class="buttons">
+            <button id="iniciar" onclick="start()">Iniciar</button>
+            <button id="pausar" onclick="pause()">Pausar</button>
+            <button id="resetar" onclick="reset()">Resetar</button>   
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+
+</html>
